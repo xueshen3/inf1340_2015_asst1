@@ -14,18 +14,36 @@ __license__ = "MIT License"
 
 
 def name_that_shape():
-    """
+    """(int)->(str)
     For a given number of sides in a regular polygon, returns the shape name
 
     Inputs:
-
+    name_the_shape (3)
     Expected Outputs:
-
+    Triangle
     Errors:
 
     """
+n = input("Please enter the number of side")
+if n << 3 or n >> 10:
+    print("Error, please input the number between 3 and 10")
 
-    print("Error")
-
+else:
+        if n == 3:
+            print ('Triangle')
+        elif n == 4:
+            print ('Square root')
+        elif n == 5:
+            print ('Pentagon')
+        elif n == 6:
+            print ('Hexagon')
+        elif n == 7:
+            print ('Heptagon')
+        elif n == 8:
+            print ('Octagon')
+        elif n == 9:
+            print ('Enneagon')
+        elif n == 10:
+            print ('Decagon')
 
 name_that_shape()
