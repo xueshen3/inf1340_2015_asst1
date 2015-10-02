@@ -19,47 +19,49 @@ def diagnose_car():
     possible issue with a car.
 
     Inputs:
-
+    y or n
     Expected Outputs:
-
+    The solution or the next question towards the car issue
     Errors:
-
+    if the user input something other than y or n
     """
     # First Trouble shooting Question
     print("Troubleshooting Car Issues")
     print("For all questions answer y for Yes or n for No")
 
-   # First Question is Yes
-    question1 = raw_input("Is the car silent when you turn the key?")
+   # If the user input y for Question1
+    question1 = raw_input("Ies the car silent when you turn the key?")
     if question1 == "y":
+    # The user enter Question2
         question2 = raw_input("Are the battery terminals corroded?")
         if question2 == "y":
             print("Clean terminals and try starting again")
         elif question2 == "n":
             print("Replace cables and try again!")
+        #if the user enter something other than y or n
         else:
             print("Please select y or n only, Try again!")
-    # If Question 1 is No
+    # If the user input n for Question1
     elif question1 == "n":
         question3 = raw_input("Does the car make a Clicking noise?")
 
-        # Question 3
+        # The user enters Question 3
         if question3 == "y":
             print("Replace the Battery.")
         elif question3 == "n":
             question4 = raw_input("Does the car crank up but fail to start?")
 
-            # Question 4
+            # The user enters Question 4
             if question4 == "y":
                 print("Check spark plug connections.")
             elif question4 == "n":
                 question5 = raw_input("Does the engine start and then die?")
 
-                # Question 5
+                # The user enters Question 5
                 if question5 == "y":
                     question6 = raw_input("Does your car have a fuel injection?")
 
-                    # Question 6
+                    # The user enters Question 6
                     if question6 == "y":
                         print("Get it in for Service")
                     elif question6 == "n":
@@ -68,6 +70,7 @@ def diagnose_car():
                         print("Please select y or n only, Try again!")
                 else:
                     print("Please select y only, Try again!")
+            #For Question 5, the user can only enter y since no information for "n" option is given
             else:
                 print("Please select y or n only, Try again!")
         else:
