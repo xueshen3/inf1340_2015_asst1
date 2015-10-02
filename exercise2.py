@@ -24,13 +24,13 @@ def name_that_shape():
     Errors:
 
       """
-# ask user for input, which is the number of sides of the shape
-n = input("Please enter the number of side, the number should be from 3 to 10")
-# if user input the number outside 3 to 10, return the user Error
-if n <= 2 or n >= 11:
-    print("Error")
-#determine the type of shade from the number of its sides
-else:
+    # ask user for input, which is the number of sides of the shape
+    n = input("Please enter the number of sides of a shape, the number should be from 3 to 10")
+    # if user input the number outside 3 to 10, return the user Error
+    if n <= 2 or n >= 11:
+        print("Error")
+    #determine the type of shade from the number of its sides
+    else:
         if n == 3:
             print ('Triangle')
         elif n == 4:

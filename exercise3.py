@@ -26,7 +26,4 @@ def diagnose_car():
 
     """
 
-    print("The battery cables may be damaged. Replace cables and try again.")
-
-
 diagnose_car()
