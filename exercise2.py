@@ -29,7 +29,7 @@ def name_that_shape():
     # if user input the number outside 3 to 10, return the user Error
     if n <= 2 or n >= 11:
         print("Error")
-    #determine the type of shade from the number of its sides
+    # Determine the type of shape from the number of its sides
     else:
         if n == 3:
             print ('Triangle')
