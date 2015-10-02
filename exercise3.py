@@ -46,7 +46,7 @@ def diagnose_car():
         # Question 3
         if question3 == "y":
             print("Replace the Battery.")
-        elif  question3 == "n":
+        elif question3 == "n":
             question4 = raw_input("Does the car crank up but fail to start?")
 
             # Question 4
