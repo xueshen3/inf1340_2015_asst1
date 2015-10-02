@@ -25,5 +25,20 @@ def diagnose_car():
     Errors:
 
     """
+    # First Trouble shooting Question
+    print("Troubleshooting Car Issues")
+    print("For all questions answer y for Yes or n for No")
+
+   # First Question is Yes
+    question1 = raw_input("Is the car silent when you turn the key?")
+    if question1 == "y":
+        question2 = raw_input("Are the battery terminals corroded?")
+        if question2 == "y":
+            print("Clean terminals and try starting again")
+        elif question2 == "n":
+            print("Replace cables and try again!")
+        else:
+            print("Please select y or n only, Try again!")
+
 
 diagnose_car()
