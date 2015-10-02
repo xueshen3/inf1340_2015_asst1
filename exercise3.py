@@ -39,6 +39,23 @@ def diagnose_car():
             print("Replace cables and try again!")
         else:
             print("Please select y or n only, Try again!")
+    # If Question 1 is No
+    elif question1 == "n":
+        question3 = raw_input("Does the car make a Clicking noise?")
+
+        # Question 3
+        if question3 == "y":
+            print("Replace the Battery.")
+        elif  question3 == "n":
+            question4 = raw_input("Does the car crank up but fail to start?")
+
+            # Question4
+
+        else:
+            print("Please select y or n only, Try again!")
+    else:
+        print("Please select y or n only, Try again!")
+
 
 
 diagnose_car()
