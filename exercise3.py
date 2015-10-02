@@ -49,8 +49,27 @@ def diagnose_car():
         elif  question3 == "n":
             question4 = raw_input("Does the car crank up but fail to start?")
 
-            # Question4
+            # Question 5
+            if question4 == "y":
+                print("Check spark plug connections.")
+            elif question4 == "n":
+                question5 = raw_input("Does the engine start and then die?")
 
+                # Question 5
+                if question5 == "y":
+                    question6 = raw_input("Does your car have a fuel injection?")
+
+                    # Question 6
+                    if question6 == "y":
+                        print("Get it in for Service")
+                    elif question6 == "n":
+                        print("Check to ensure the choke is opening and closing")
+                    else:
+                        print("Please select y or n only, Try again!")
+                else:
+                    print("Please select y or n only, Try again!")
+            else:
+                print("Please select y or n only, Try again!")
         else:
             print("Please select y or n only, Try again!")
     else:
