@@ -49,7 +49,7 @@ def diagnose_car():
         elif  question3 == "n":
             question4 = raw_input("Does the car crank up but fail to start?")
 
-            # Question 5
+            # Question 4
             if question4 == "y":
                 print("Check spark plug connections.")
             elif question4 == "n":
@@ -67,7 +67,7 @@ def diagnose_car():
                     else:
                         print("Please select y or n only, Try again!")
                 else:
-                    print("Please select y or n only, Try again!")
+                    print("Please select y only, Try again!")
             else:
                 print("Please select y or n only, Try again!")
         else:
