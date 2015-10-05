@@ -25,11 +25,14 @@ def name_that_shape():
 
       """
     # ask user for input, which is the number of sides of the shape
-    n = input("Please enter the number of sides of a shape, the number should be from 3 to 10")
+    n = input("Please enter the number of sides of a shape, the number should be a whole number from 3 to 10")
+
     # if user input the number outside 3 to 10, return the user Error
     if n <= 2 or n >= 11:
         print("Error")
+
     # Determine the type of shape from the number of its sides
+    # Eight Possible outcomes depending on input
     else:
         if n == 3:
             print ('Triangle')
