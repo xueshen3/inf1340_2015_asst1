@@ -34,10 +34,11 @@ def diagnose_car():
     if question1 == "y":
 
         # The user enter Question2
-        # Question2 output will print different procedure depending on answer no more questions after this
+        # If input is (y,y) out put text
         question2 = raw_input("Are the battery terminals corroded?")
         if question2 == "y":
             print("Clean terminals and try starting again")
+       # If input is (y,n) out put text below
         elif question2 == "n":
             print("Replace cables and try again!")
 
@@ -47,14 +48,15 @@ def diagnose_car():
             print("Please select y or n only, Try again!")
 
     # If the user input n for Question1
-    # Branches off into more scenarios here
+    # If input is (n) new question will be asked
     elif question1 == "n":
         question3 = raw_input("Does the car make a Clicking noise?")
 
         # The user enters Question 3
-        # If answered y code ends otherwise next scenario
+        # If input is (n,y) output is recommendation
         if question3 == "y":
             print("Replace the Battery.")
+        # If input is (n,n) new input is required
         elif question3 == "n":
             question4 = raw_input("Does the car crank up but fail to start?")
 
