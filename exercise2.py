@@ -25,30 +25,29 @@ def name_that_shape():
     The user will not get any shape if the number is below 3 or above 10
       """
     # ask user for input, which is the number of sides of the shape
-    n = input("Please enter the number of sides of a shape, the number should be a whole number from 3 to 10")
-
-    # if user input the number outside 3 to 10, return the user Error
-    if n <= 2 or n >= 11:
-        print("Error")
+    n = raw_input("Please enter the number of sides of a shape, the number should be a whole number from 3 to 10")
 
     # Determine the type of shape from the number of its sides
     # Eight Possible outcomes depending on input
-    else:
-        if n == 3:
-            print ('Triangle')
-        elif n == 4:
-            print ('Square root')
-        elif n == 5:
-            print ('Pentagon')
-        elif n == 6:
-            print ('Hexagon')
-        elif n == 7:
-            print ('Heptagon')
-        elif n == 8:
-            print ('Octagon')
-        elif n == 9:
-            print ('Enneagon')
-        elif n == 10:
-            print ('Decagon')
+    if n == "3":
+        print ('triangle')
+    elif n == "4":
+        print ('quadrilateral')
+    elif n == "5":
+        print ('pentagon')
+    elif n == "6":
+        print ('hexagon')
+    elif n == "7":
+        print ('heptagon')
+    elif n == "8":
+        print ('octagon')
+    elif n == "9":
+        print ('nonagon')
+    elif n == "10":
+        print ('decagon')
+
+    # if user input the number outside 3 to 10, return the user Error
+    elif n <= "2" or n >= "11":
+        print("Error")
 
 name_that_shape()
