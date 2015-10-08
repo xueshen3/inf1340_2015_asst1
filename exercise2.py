@@ -18,12 +18,13 @@ def name_that_shape():
     For a given number of sides in a regular polygon, returns the shape name
 
     Inputs:
-    name_the_shape (3)
+    The user input the number to determine the shape
     Expected Outputs:
-    Triangle
+    The type of shape will be displayed according to the number input
     Errors:
-
+    The user will not get any shape if the number is below 3 or above 10
       """
+
     # ask user for input, which is the number of sides of the shape
     n = input("Please enter the number of sides of a shape, the number should be from 3 to 10")
     # if user input the number outside 3 to 10, return the user Error
