@@ -24,7 +24,6 @@ def name_that_shape():
     Errors:
     The user will not get any shape if the number is below 3 or above 10
       """
-
     # ask user for input, which is the number of sides of the shape
     n = input("Please enter the number of sides of a shape, the number should be a whole number from 3 to 10")
 
