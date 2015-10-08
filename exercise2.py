@@ -29,28 +29,20 @@ def name_that_shape():
 
     # Determine the type of shape from the number of its sides
     # Eight Possible outcomes depending on input
-    # If the user enter 3, the program would return the user triangle
     if n == "3":
         print ('triangle')
-    # If the user enter 4, the program would return the user quadrilateral
     elif n == "4":
         print ('quadrilateral')
-    # If the user enter 5, the program would return the user pentagon
     elif n == "5":
         print ('pentagon')
-    # If the user enter 6, the program would return the user hexagon
     elif n == "6":
         print ('hexagon')
-    # If the user enter 7, the program would return the user heptagon
     elif n == "7":
         print ('heptagon')
-    # If the user enter 8, the program would return the user octagon
     elif n == "8":
         print ('octagon')
-    # If the user enter 9, the program would would display nonagon
     elif n == "9":
         print ('nonagon')
-    # If the user enter 10, the program would return the user decagon
     elif n == "10":
         print ('decagon')
 
