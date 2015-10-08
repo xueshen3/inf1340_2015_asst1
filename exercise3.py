@@ -79,7 +79,7 @@ def diagnose_car():
                     else:
                         print("Please select y or n only, Try again!")
                 # Other side of question 5
-                # If m recommendation happens
+                # If n recommendation happens
                 elif question5 == "n":
                     print("Engine is not getting enough fuel. Clean fuel pump.")
 
