@@ -59,14 +59,15 @@ def diagnose_car():
             question4 = raw_input("Does the car crank up but fail to start?")
 
             # The user enters Question 4
-            # Again scenario will end if question is answered with y, otherwise new scenario
+            # If (n,n,y) recommendation is given
             if question4 == "Y":
                 print("Check spark plug connections.")
+            # If (n,n,n) New question is asked
             elif question4 == "N":
                 question5 = raw_input("Does the engine start and then die?")
 
                 # The user enters Question 5
-                # If y here new scenario occurs
+                # If (n,n,n,y) Last possible question is asked
                 if question5 == "Y":
                     question6 = raw_input("Does your car have a fuel injection?")
 
@@ -78,8 +79,9 @@ def diagnose_car():
                         print("Check to ensure the choke is opening and closing.")
                     else:
                         print("Please select Y or N only, Try again!")
+
                 # Other side of question 5
-                # If n recommendation happens
+                # If (n,n,n,n) Recommendation is given
                 elif question5 == "N":
                     print("Engine is not getting enough fuel. Clean fuel pump.")
 
