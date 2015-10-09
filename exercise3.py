@@ -27,61 +27,61 @@ def diagnose_car():
     """
 
 
-   # If the user input y for Question1 should proceed to question2
+   # If the user input Y for Question 1 should be asked question 2 as output
     question1 = raw_input("Is the car silent when you turn the key?")
     if question1 == "Y":
 
         # The user enter Question2
-        # If input is (y,y) out put text
+        # If input is (Y,Y) output will be recommendation to clean terminals
         question2 = raw_input("Are the battery terminals corroded?")
         if question2 == "Y":
             print("Clean terminals and try starting again.")
-       # If input is (y,n) out put text below
+        # If input is (Y,N) output will be recommendation to replace cables
         elif question2 == "N":
             print("Replace cables and try again.")
 
         # If the user enter something other than y or n
-        # For every question if it is not y or n, same output will happen
+        # For every question if it is not y or n, output will be error message
         else:
             print("Please select Y or N only, Try again!")
 
-    # If the user input n for Question1
-    # If input is (n) new question will be asked
+    # If input is (N) output will be question 3 about clicking noise
     elif question1 == "N":
         question3 = raw_input("Does the car make a Clicking noise?")
 
         # The user enters Question 3
-        # If input is (n,y) output is recommendation
+        # If input is (N,Y) output is recommendation to replace battery
         if question3 == "Y":
             print("Replace the battery.")
-        # If input is (n,n) new input is required
+        # If input is (N,N) output is question 4 about cranking and failing to start
         elif question3 == "N":
             question4 = raw_input("Does the car crank up but fail to start?")
 
             # The user enters Question 4
-            # If (n,n,y) recommendation is given
+            # If input (N,N,Y) output is recommendation to check spark plugs
             if question4 == "Y":
                 print("Check spark plug connections.")
-            # If (n,n,n) New question is asked
+            # If input is (N,N,N) output is question 5 about starting and dieing
             elif question4 == "N":
                 question5 = raw_input("Does the engine start and then die?")
 
                 # The user enters Question 5
-                # If (n,n,n,y) Last possible question is asked
+                # If input is (N,N,N,Y) output is question 6 about fuel injection
                 if question5 == "Y":
                     question6 = raw_input("Does your car have a fuel injection?")
 
                     # The user enters Question 6
-                    # Last possible output, different recommendation depending on y or n, no more scenarios
+                    # If input is (N,N,N,Y,Y) output is recommendation to get in to service
                     if question6 == "Y":
                         print("Get it in for service.")
+                    # If input is (N,N,N,Y,N) output is recommendation to check the choke
                     elif question6 == "N":
                         print("Check to ensure the choke is opening and closing.")
                     else:
                         print("Please select Y or N only, Try again!")
 
                 # Other side of question 5
-                # If (n,n,n,n) Recommendation is given
+                # If input is (N,N,N,N) output is recommendation to clean fuel pump
                 elif question5 == "N":
                     print("Engine is not getting enough fuel. Clean fuel pump.")
 
